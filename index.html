@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-fieldset">
+        <legend>Form Validation</legend>
+        <form id="validationForm">
+          <div class="form-elements">
+            <div class="email">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="country">
+              <label for="country">Country:</label>
+              <input type="text" id="country" name="country" required />
+              <span class="error-message" id="countryError"></span>
+            </div>
+
+            <div class="zip">
+              <label for="zip">ZIP Code:</label>
+              <input type="text" id="zip" name="zip" required />
+              <span class="error-message" id="zipError"></span>
+            </div>
+
+            <div class="password">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required />
+              <span class="error-message" id="passwordError"></span>
+            </div>
+
+            <div class="button">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
